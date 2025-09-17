@@ -140,7 +140,7 @@ jobs:
             core.exportVariable('VCPKG_BINARY_SOURCES', 'clear;x-gha,readwrite');
 
       - name: Setup | Install dependencies
-        run: ${{ matrix.install }}
+        run: ${{ matrix.installs }}
 
       - name: Build | Test
         run: cargo test
